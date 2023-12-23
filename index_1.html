@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+    <title>Simplotel-Assignment</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-center">
+        <div class="nav-header">
+          <h2 class="logo">Simplotel</h2>
+          <ul class="nav-links">
+            <li>
+              <a href="#">home</a>
+            </li>
+            <li>
+              <a href="#">order</a>
+            </li>
+            <li>
+              <a href="#">food</a>
+            </li>
+            <li>
+              <a href="#">restaurant</a>
+            </li>
+            <li>
+              <a href="#">testimonials</a>
+            </li>
+            <li>
+              <a href="#">contact us</a>
+            </li>
+          </ul>
+          <button class="nav-btn" id="nav-btn">
+            <img src="./menu-bar.png" alt="btn" />
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">order</a>
+          </li>
+          <li>
+            <a href="#">food</a>
+          </li>
+          <li>
+            <a href="#">restaurant</a>
+          </li>
+          <li>
+            <a href="#">testimonials</a>
+          </li>
+          <li>
+            <a href="#">contact us</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <header class="hero">
+      <div class="section-center hero-center">
+        <article class="hero-info">
+          <h1 class="hero-head">Lorem ipsum</h1>
+          <p class="hero-para">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            dicta, vitae asperiores dolore facere recusandae consequatur iusto
+            suscipit incidunt amet eum neque iste voluptate eveniet quaerat
+            molestiae, culpa quos modi, dignissimos natus ea placeat distinctio
+            esse perferendis. Incidunt, deleniti temporibus facilis molestias
+            laborum excepturi nesciunt dicta ex voluptatum tenetur cupiditate.
+          </p>
+          <button class="hero-btn">click me</button>
+        </article>
+        <article class="hero-img">
+          <img
+            src="./pexels-robin-stickel-70497.jpg"
+            class="hero-img"
+            alt="img"
+          />
+        </article>
+      </div>
+    </header>
+
+    <section class="images-section">
+      <div class="section-center images-center">
+        <div class="grid-images">
+          <article class="image">
+            <img
+              src="./pexels-eva-bronzini-6141651.jpg"
+              alt="img-1"
+              class="img-1"
+            />
+          </article>
+          <article class="image">
+            <img
+              src="./pexels-mister-mister-3434523.jpg"
+              alt="img-2"
+              class="img-2"
+            />
+          </article>
+          <article class="image">
+            <img
+              src="./pexels-rachel-claire-6752433.jpg"
+              alt="img-3"
+              class="img-3"
+            />
+          </article>
+        </div>
+        <div class="second-container">
+          <p class="para">Lorem, ipsum.</p>
+          <h1 class="head">Lorem ipsum dolor sit amet.</h1>
+          <div class="arrow-container">
+            <button class="arrow-btn">click me</button>
+            <img src="./icons8-arrow-30.png" alt="arrow" class="arrow" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const navBtn = document.getElementById("nav-btn");
+      const sidebar = document.getElementById("sidebar");
+      const closeBtn = document.getElementById("close-btn");
+
+      navBtn.addEventListener("click", () => {
+        sidebar.classList.add("show-sidebar");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        sidebar.classList.remove("show-sidebar");
+      });
+    </script>
+  </body>
+</html>
