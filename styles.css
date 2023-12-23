@@ -72,6 +72,7 @@ button {
   .logo {
     display: none;
   }
+
   /* .logo {
     font-size: 2rem;
   } */
@@ -183,11 +184,12 @@ button {
 }
 
 .hero-head {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 1rem;
+  letter-spacing: 4px;
   margin-bottom: 4rem;
+  /* letter-spacing: 0px; */
 }
 
 .hero-para {
@@ -195,17 +197,17 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 2px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-bottom: 4rem;
   color: #191919;
 }
 
 .hero-btn {
   background-color: #ff7171;
-  width: 50%;
-  padding: 1rem;
+  width: 100%;
+  padding: 0.5rem;
   border: none;
-  font-size: 2rem;
+  font-size: 1rem;
   color: white;
   text-transform: capitalize;
   letter-spacing: 5px;
@@ -221,6 +223,7 @@ button {
   .hero-img {
     display: block;
   }
+
   .hero-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -230,6 +233,19 @@ button {
     height: calc(100vh - 5rem);
     width: 100%;
     object-fit: cover;
+  }
+
+  .hero-head {
+    font-size: 4rem;
+  }
+
+  .hero-para {
+    font-size: 1.2rem;
+  }
+
+  .hero-btn {
+    font-size: 1rem;
+    width: 50%;
   }
 }
 
@@ -331,10 +347,12 @@ button {
     width: 300px;
     height: 250px;
   }
+
   .img-2 {
     grid-area: b;
     height: 515px;
   }
+
   .img-3 {
     grid-area: c;
     height: 250px;
